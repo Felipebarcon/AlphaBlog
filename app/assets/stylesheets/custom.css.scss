@@ -1,5 +1,6 @@
 @import 'bootstrap/dist/css/bootstrap';
 
+
 .navbar {
   background-color: black !important;
 }
@@ -17,40 +18,29 @@
   font-weight: bold;
 }
 
-#logo:hover {
-  color: #fff;
-  text-decoration: none;
-}
-
-.container {
-margin-top: 100px;
+#home-container {
+  margin-top: 25px;
 }
 
 .jumbotron {
-  background-image: url(jumbotron-img.jpg);
+  background-image: asset-url('jumbotron-img.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 425px;
-  width: auto;
-}
-
-
-.jumbotron h1 {
-  color: #fff;
-  text-align: center;
-  margin-bottom: 30px;
-  letter-spacing: -1px;
-  font-weight: bold;
+  height: 100vh;
 }
 
 html,
 body {
   height: 100%;
-  background-color: lightgray;
+}
+
+#page-content {
+  flex: 1 0 auto;
+  background-color: lightgrey;
 }
 
 #sticky-footer {
-  height: 7vh;
-  padding-top: 20px;
+  flex-shrink: none;
+  height: 5vh
 }

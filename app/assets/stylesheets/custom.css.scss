@@ -7,6 +7,7 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
 @import '@fortawesome/fontawesome-free/scss/v4-shims';
 
 
+// navbar
 .navbar {
   background-color: black !important;
   position: sticky;
@@ -19,6 +20,8 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
   color: white !important;
 }
 
+// logo
+
 #logo {
   float: left;
   font-size: 1.7em;
@@ -28,6 +31,7 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
   font-weight: bold;
 }
 
+// home-page
 #home-container {
   margin-top: 25px;
 }
@@ -40,17 +44,24 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
   height: 83vh;
 }
 
+// general
 html,
 body {
   height: 100%;
 }
+
+.page-content {
+  background-color: lightgrey;
+}
+
+// footer
 
 #sticky-footer {
   background: black;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100px;
+  height: 7vh;
   padding: 0px 50px;
   color: rgba(0, 0, 0, 0.3);
 }
@@ -78,3 +89,5 @@ body {
 .fa-heart {
   color: red;
 }
+
+// article

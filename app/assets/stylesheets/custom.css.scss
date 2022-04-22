@@ -41,17 +41,18 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 83vh;
+  height: 85vh;
 }
 
 // general
 html,
 body {
-  height: 100%;
+  min-height: 100%;
 }
 
 .page-content {
-  background-color: lightgrey;
+  background-color: white;
+  margin-bottom: 3em;
 }
 
 // footer
@@ -61,7 +62,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 7vh;
+  height: 50px;
   padding: 0px 50px;
   color: rgba(0, 0, 0, 0.3);
 }

@@ -8,4 +8,12 @@
 
 <h2 class="text-center pt-4 mt-5">My Articles</h2>
 
+<div class="apple_pagination">
+  <%= will_paginate @articles, :container => false %>
+</div>
+
 <%= render 'articles/article' %>
+
+<div class="apple_pagination">
+  <%= will_paginate @articles, :container => false %>
+</div>

@@ -12,4 +12,12 @@ class ApplicationController < ActionController::Base
     !!current_user
   end
 
+  # Method to verify if user is logged in and can perform some actions
+  def require_user
+    if !logged_in?
+      flash[:alert] = "You must be logged in to perform this action"
+      redirect_to login_path
+    end
+  end
+
 end

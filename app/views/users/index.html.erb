@@ -20,8 +20,17 @@
             <%= link_to "View profile", user_path(user), class: "btn btn-outline-success" %>
 
           <%# restrict this action to login user %>
-          <% if logged_in? && user == current_user %>
-            <%= link_to "Edit profile", edit_user_path(user), class: "btn btn-outline-info" %>
+          <% if logged_in? %>
+
+          <%# current user can edit their profile %>
+            <% if user == current_user %>
+              <%= link_to "Edit profile", edit_user_path(user), class: "btn btn-outline-info" %>
+            <% end %>
+          <%# admin user can delete other users accounts %>
+            <% if current_user.admin? %>
+              <%= link_to "Delete User", user_path(user), class: "btn btn-outline-danger", method: :delete, data: {confirm: "Are you sure?"}%>
+            <% end %>
+
           <% end %>
         </div>
         <div class="card-footer text-muted">
